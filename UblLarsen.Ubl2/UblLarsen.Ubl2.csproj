@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5BEB0F4-1D60-4079-847F-6120519E7B3B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UblLarsen.Ubl2</RootNamespace>
+    <AssemblyName>UblLarsen.Ubl2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <DocumentationFile>bin\Debug\UblLarsen.Ubl2.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>UBLLarsen.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="common\CodeList_CurrencyCode_ISO_7_04.cs" />
+    <None Include="common\CodeList_LanguageCode_ISO_7_04.cs" />
+    <None Include="common\CodeList_MIMEMediaTypeCode_IANA_7_04.cs" />
+    <None Include="common\CodeList_UnitCode_UNECE_7_04.cs" />
+    <Compile Include="common\UnqualifiedDataTypeSchemaModule-2.0.partials.cs" />
+    <Compile Include="common\UBL-CommonAggregateComponents-2.0.cs" />
+    <Compile Include="common\UBL-CommonBasicComponents-2.0.cs" />
+    <Compile Include="common\UBL-CommonExtensionComponents-2.0.cs" />
+    <Compile Include="common\UBL-QualifiedDatatypes-2.0.cs" />
+    <Compile Include="common\UnqualifiedDataTypeSchemaModule-2.0.cs" />
+    <Compile Include="maindoc\UBL-ApplicationResponse-2.0.cs" />
+    <Compile Include="maindoc\UBL-AttachedDocument-2.0.cs" />
+    <Compile Include="maindoc\UBL-BaseDocument-2.0.cs" />
+    <Compile Include="maindoc\UBL-BaseDocument-2.0.partial.cs" />
+    <Compile Include="maindoc\UBL-BillOfLading-2.0.cs" />
+    <Compile Include="maindoc\UBL-Catalogue-2.0.cs" />
+    <Compile Include="maindoc\UBL-CatalogueDeletion-2.0.cs" />
+    <Compile Include="maindoc\UBL-CatalogueItemSpecificationUpdate-2.0.cs" />
+    <Compile Include="maindoc\UBL-CataloguePricingUpdate-2.0.cs" />
+    <Compile Include="maindoc\UBL-CatalogueRequest-2.0.cs" />
+    <Compile Include="maindoc\UBL-CertificateOfOrigin-2.0.cs" />
+    <Compile Include="maindoc\UBL-CreditNote-2.0.cs" />
+    <Compile Include="maindoc\UBL-DebitNote-2.0.cs" />
+    <Compile Include="maindoc\UBL-DespatchAdvice-2.0.cs" />
+    <Compile Include="maindoc\UBL-ForwardingInstructions-2.0.cs" />
+    <Compile Include="maindoc\UBL-FreightInvoice-2.0.cs" />
+    <Compile Include="maindoc\UBL-Invoice-2.0.cs" />
+    <Compile Include="maindoc\UBL-Order-2.0.cs" />
+    <Compile Include="maindoc\UBL-OrderCancellation-2.0.cs" />
+    <Compile Include="maindoc\UBL-OrderChange-2.0.cs" />
+    <Compile Include="maindoc\UBL-OrderResponse-2.0.cs" />
+    <Compile Include="maindoc\UBL-OrderResponseSimple-2.0.cs" />
+    <Compile Include="maindoc\UBL-PackingList-2.0.cs" />
+    <Compile Include="maindoc\UBL-Quotation-2.0.cs" />
+    <Compile Include="maindoc\UBL-ReceiptAdvice-2.0.cs" />
+    <Compile Include="maindoc\UBL-Reminder-2.0.cs" />
+    <Compile Include="maindoc\UBL-RemittanceAdvice-2.0.cs" />
+    <Compile Include="maindoc\UBL-RequestForQuotation-2.0.cs" />
+    <Compile Include="maindoc\UBL-SelfBilledCreditNote-2.0.cs" />
+    <Compile Include="maindoc\UBL-SelfBilledInvoice-2.0.cs" />
+    <Compile Include="maindoc\UBL-Statement-2.0.cs" />
+    <Compile Include="maindoc\UBL-TransportationStatus-2.0.cs" />
+    <Compile Include="maindoc\UBL-Waybill-2.0.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="UBLLarsen.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(TargetFrameworkSDKToolsDirectory)sgen.exe" /assembly:"$(TargetPath)" /force "/compiler:/keyfile:\"$(ProjectDir)UblLarsen.snk\"" /compiler:/delaysign-</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
